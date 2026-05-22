@@ -3478,4 +3478,17 @@ figcaption {
   justify-self: start;
 }
 
+/* Fix: remove width resize hover on tablet and below, prevent text wrapping */
+@media screen and (max-width: 991px) {
+  .message-form_clickable,
+  .message-form_clickable:hover {
+    width: 15rem;
+    transition: box-shadow 0.16s;
+  }
+  .message-form_clickable .text-size-regular,
+  .message-form_clickable .text-size-tiny {
+    white-space: nowrap;
+  }
+}
+
 
