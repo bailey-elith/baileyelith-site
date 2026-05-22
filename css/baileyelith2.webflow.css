@@ -3478,6 +3478,14 @@ figcaption {
   justify-self: start;
 }
 
+/* Fix: full width button on mobile portrait */
+@media screen and (max-width: 479px) {
+  .message-form_clickable,
+  .message-form_clickable:hover {
+    width: 100% !important;
+  }
+}
+
 /* Fix: disable all hover effects on Book a call button for tablet and below */
 @media screen and (max-width: 991px) {
   .message-form_clickable,
