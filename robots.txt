@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /style-guide
+Disallow: /home-old
+Disallow: /401
+
+Sitemap: https://baileyelith.com/sitemap.xml
