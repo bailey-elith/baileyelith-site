@@ -3480,8 +3480,14 @@ figcaption {
 
 /* Fix: full width button on mobile portrait */
 @media screen and (max-width: 479px) {
+  .message-modal_wrapper {
+    align-items: stretch;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
   .message-form_clickable,
   .message-form_clickable:hover {
+    display: block !important;
     width: 100% !important;
   }
 }
