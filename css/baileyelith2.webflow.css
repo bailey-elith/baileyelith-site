@@ -3478,20 +3478,6 @@ figcaption {
   justify-self: start;
 }
 
-/* Fix: full width button on mobile portrait */
-@media screen and (max-width: 479px) {
-  .message-modal_wrapper {
-    align-items: stretch;
-    padding-left: .5rem;
-    padding-right: .5rem;
-  }
-  .message-form_clickable,
-  .message-form_clickable:hover {
-    display: block !important;
-    width: 100% !important;
-  }
-}
-
 /* Fix: disable all hover effects on Book a call button for tablet and below */
 @media screen and (max-width: 991px) {
   .message-form_clickable,
@@ -3512,6 +3498,20 @@ figcaption {
   .message-form_clickable:hover * {
     transition: none !important;
     transform: none !important;
+  }
+}
+
+/* Fix: full width button on mobile portrait (must come after 991px rule) */
+@media screen and (max-width: 479px) {
+  .message-modal_wrapper {
+    align-items: stretch;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  .message-form_clickable,
+  .message-form_clickable:hover {
+    display: block !important;
+    width: 100% !important;
   }
 }
 
