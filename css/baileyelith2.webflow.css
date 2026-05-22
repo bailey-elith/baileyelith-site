@@ -3478,16 +3478,26 @@ figcaption {
   justify-self: start;
 }
 
-/* Fix: remove width resize hover on tablet and below, prevent text wrapping */
+/* Fix: disable all hover effects on Book a call button for tablet and below */
 @media screen and (max-width: 991px) {
   .message-form_clickable,
   .message-form_clickable:hover {
-    width: 15rem;
-    transition: box-shadow 0.16s;
+    width: 15rem !important;
+    box-shadow: 0 3px 12px 1px #00000040 !important;
+    transition: none !important;
   }
-  .message-form_clickable .text-size-regular,
-  .message-form_clickable .text-size-tiny {
-    white-space: nowrap;
+  .message-form_clickable .message-modal_layout,
+  .message-form_clickable:hover .message-modal_layout,
+  .message-form_clickable .message-form_layout,
+  .message-form_clickable:hover .message-form_layout {
+    grid-column-gap: inherit !important;
+    grid-row-gap: inherit !important;
+    transition: none !important;
+  }
+  .message-form_clickable *,
+  .message-form_clickable:hover * {
+    transition: none !important;
+    transform: none !important;
   }
 }
 
