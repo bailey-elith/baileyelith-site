@@ -4,4 +4,4 @@ Disallow: /style-guide
 Disallow: /home-old
 Disallow: /401
 
-Sitemap: https://baileyelith.com/sitemap.xml
+Sitemap: https://www.baileyelith.com/sitemap.xml
