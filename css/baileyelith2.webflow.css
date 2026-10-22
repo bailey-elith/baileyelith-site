@@ -3516,3 +3516,20 @@ figcaption {
 }
 
 
+
+/* Fix: keep sidebar labels on one line */
+.inner-side_dropdown,
+.inner-side_dropdown-toggle {
+  padding-right: .5rem;
+}
+.inner-side_profile,
+.inner-side_dropdown .icon_wrapper {
+  flex: none;
+}
+.inner-side_dropdown > .text-size-regular,
+.inner-side_dropdown-toggle > .text-size-regular {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
