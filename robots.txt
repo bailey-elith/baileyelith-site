@@ -5,3 +5,14 @@ Disallow: /home-old
 Disallow: /401
 
 Sitemap: https://www.baileyelith.com/sitemap.xml
+
+# Keep testimonial headshots out of Google thumbnails
+User-agent: Googlebot-Image
+Disallow: /images/5a0432c4ef2541cea1efd59058f6a79caHvbE.webp
+Disallow: /images/Angela-Spindler.avif
+Disallow: /images/Danielle-Shaheen.avif
+Disallow: /images/Headshot-Reinder-Prins.avif
+Disallow: /images/Kiara-B.avif
+Disallow: /images/RW.avif
+Disallow: /images/Rustin-R.avif
+Disallow: /images/Simon.avif
